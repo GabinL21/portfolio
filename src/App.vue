@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import WorkInProgress from './components/WorkInProgress.vue'
+import Hero from './components/Hero.vue'
 </script>
 
 <template>
-  <WorkInProgress msg="WORK IN PROGRESS" />
+  <Hero />
 </template>
 
 <style scoped>
