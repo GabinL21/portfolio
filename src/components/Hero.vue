@@ -14,11 +14,9 @@
 div {
     @apply flex flex-col h-screen justify-center md:items-start items-center px-24 md:px-32 xl:px-48
 }
-
 h1 {
     @apply text-5xl md:text-6xl xl:text-7xl md:text-start text-center
 }
-
 h2 {
     @apply text-2xl md:text-3xl xl:text-4xl md:text-start text-center mt-8
 }
