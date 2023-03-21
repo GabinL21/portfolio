@@ -6,5 +6,5 @@
 
 
 body {
-  @apply bg-slate-900 text-slate-50 font-fredoka scroll-smooth overflow-hidden
+  @apply bg-primary text-secondary font-fredoka scroll-smooth overflow-hidden tracking-tight
 }

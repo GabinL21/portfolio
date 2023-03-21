@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./index.html",
@@ -7,6 +9,11 @@ module.exports = {
   theme: {
     fontFamily: {
       'fredoka': 'Fredoka, sans-serif',
+    },
+    colors: {
+      primary: '#F4F3F1',
+      secondary: '#191818',
+      accent: colors.orange,
     },
     extend: {},
   },

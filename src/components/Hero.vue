@@ -21,11 +21,11 @@ h1 {
 }
 
 h2 {
-    @apply text-center text-3xl md:text-4xl xl:text-5xl font-light mt-8 text-slate-500 px-12
+    @apply text-center text-3xl md:text-4xl xl:text-5xl font-light mt-8 px-12
 }
 
 .link {
-    @apply underline underline-offset-8 decoration-2 text-cyan-500 hover:text-cyan-300
+    @apply underline underline-offset-8 decoration-2 text-accent-500 hover:text-accent-300
 }
 
 </style>
