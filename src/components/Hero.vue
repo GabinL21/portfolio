@@ -12,7 +12,7 @@
 <style scoped>
 
 div {
-    @apply flex flex-col h-screen justify-center xl:items-start items-center px-24 md:px-32 xl:px-48
+    @apply flex flex-col h-screen justify-center xl:items-start items-center px-12 md:px-32 xl:px-48
 }
 h1 {
     @apply text-5xl md:text-6xl xl:text-7xl xl:text-start text-center
