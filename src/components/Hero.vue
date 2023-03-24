@@ -3,15 +3,18 @@
 </script>
 
 <template>
-    <div>
+    <div class="wrapper">
         <h1>Gabin <span class="bold">Laigle</span></h1>
-        <h2>Relax, you found the right <span class="link bold"><a href="https://www.linkedin.com/in/gabin-laigle/">software engineer</a></span></h2>
+        <h2>Relax, you found the right <span class="bold">software engineer</span></h2>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
+        </div>
     </div>
 </template>
 
 <style scoped>
 
-div {
+.wrapper {
     @apply flex flex-col h-screen justify-center xl:items-start items-center px-12 md:px-32 xl:px-48
 }
 h1 {
@@ -21,12 +24,12 @@ h2 {
     @apply text-2xl md:text-3xl xl:text-4xl xl:text-start text-center mt-8
 }
 
-.link {
-    @apply underline underline-offset-8 decoration-2 text-accent-500 hover:text-accent-300
-}
-
 .bold {
     @apply font-normal
+}
+
+.primary-btn {
+    @apply bg-accent-400 hover:bg-accent-300 px-4 py-2 mt-16 font-normal text-primary rounded-lg
 }
 
 </style>
