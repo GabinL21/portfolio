@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'fredoka': 'Fredoka, sans-serif',
+      'urbanist': 'Urbanist, sans-serif',
     },
     colors: {
       primary: '#F4F3F1',

@@ -25,11 +25,12 @@ h2 {
 }
 
 .bold {
-    @apply font-normal
+    @apply font-medium
 }
 
 .primary-btn {
-    @apply bg-accent-400 hover:bg-accent-300 px-4 py-2 mt-16 font-normal text-primary rounded-lg
+    @apply bg-accent-400 hover:bg-accent-300 px-4 py-2 mt-16 rounded-lg 
+    text-primary font-medium
 }
 
 </style>
