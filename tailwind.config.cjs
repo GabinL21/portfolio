@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'urbanist': 'Urbanist, sans-serif',
+      'quicksand': 'Quicksand, sans-serif',
     },
     colors: {
       primary: '#F4F3F1',

@@ -5,7 +5,7 @@
 <template>
     <div class="wrapper">
         <h1>Gabin <span class="bold">Laigle</span></h1>
-        <h2>Relax, you found the right <span class="bold">software engineer</span></h2>
+        <h2>Relax, you found the right <span class="bold marker-underline">software engineer</span></h2>
         <div class="buttons">
             <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
         </div>
@@ -29,8 +29,17 @@ h2 {
 }
 
 .primary-btn {
-    @apply bg-accent-400 hover:bg-accent-300 px-4 py-2 mt-16 rounded-lg 
+    @apply px-4 py-2 mt-16 rounded-lg 
     text-primary font-medium
+    bg-gradient-to-br from-accent-400 to-accent-500
+    hover:from-accent-300 hover:to-accent-400
+}
+
+.marker-underline {
+  background-image: linear-gradient(120deg, #fdba74 0%, #fb923c 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 92%;
 }
 
 </style>
