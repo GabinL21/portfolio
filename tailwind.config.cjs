@@ -15,7 +15,19 @@ module.exports = {
       secondary: '#191818',
       accent: colors.orange,
     },
-    extend: {},
+    extend: {
+      animation: {
+        fade: 'fade 750ms ease-in forwards',
+      },
+      keyframes: theme => ({
+        fade: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      }),
+    },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+  ],
 }
