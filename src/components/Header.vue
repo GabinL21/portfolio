@@ -26,7 +26,7 @@
 }
 
 .selected-nav {
-    background-image: linear-gradient(120deg, #fdba74 0%, #fb923c 100%);
+    background-image: linear-gradient(120deg, #F6805B 0%, #F25524 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 100%;

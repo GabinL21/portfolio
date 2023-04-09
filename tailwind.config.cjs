@@ -13,7 +13,11 @@ module.exports = {
     colors: {
       primary: '#F4F3F1',
       secondary: '#191818',
-      accent: colors.orange,
+      accent: {
+        400: '#E3400D',
+        500: '#F25524',
+        700: '#F6805B',
+      },
     },
     extend: {
       animation: {

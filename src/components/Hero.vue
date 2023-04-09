@@ -38,13 +38,12 @@ h2 {
 .primary-btn {
     @apply px-4 py-2 rounded-lg 
     text-primary font-medium
-    bg-gradient-to-br from-accent-400 to-accent-500
-    hover:from-accent-300 hover:to-accent-400
+    bg-accent-500 hover:bg-accent-400
     animate-fade animation-delay-1500 opacity-0
 }
 
 .marker-underline {
-  background-image: linear-gradient(120deg, #fdba74 0%, #fb923c 100%);
+  background-image: linear-gradient(120deg, #F6805B 0%, #F25524 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 92%;
