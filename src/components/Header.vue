@@ -4,7 +4,10 @@
 
 <template>
     <header class="wrapper-header">
-        <p class="logo">gabin-laigle</p>
+        <div class="logo">
+            <p class="icon">~</p>
+            <p>gabin-laigle</p>
+        </div>
         <nav class="wrapper-nav">
             <a class="selected-nav nav-item" href="#">Home</a>
             <a class="nav-item" href="mailto:gabin.laigle21@gmail.com">Contact</a>
@@ -14,8 +17,12 @@
 
 <style scoped>
 
+.icon {
+    @apply text-accent-500 text-4xl font-normal;
+}
+
 .logo {
-    @apply font-semibold text-lg
+    @apply font-semibold text-lg flex space-x-2 items-center
 }
 
 .selected-nav {
