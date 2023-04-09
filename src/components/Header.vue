@@ -7,8 +7,7 @@
         <p class="logo">gabin-laigle</p>
         <nav class="wrapper-nav">
             <a class="selected-nav nav-item" href="#">Home</a>
-            <a class="nav-item" href="#about">About</a>
-            <a class="nav-item" href="#contact">Contact</a>
+            <a class="nav-item" href="mailto:gabin.laigle21@gmail.com">Contact</a>
         </nav>
     </header>
 </template>
