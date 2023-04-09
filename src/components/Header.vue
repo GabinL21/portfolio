@@ -41,7 +41,7 @@
 }
 
 .wrapper-nav {
-    @apply flex space-x-8 items-center text-secondary font-medium;
+    @apply flex space-x-4 md:space-x-8 items-center text-secondary font-medium;
 }
 
 </style>
