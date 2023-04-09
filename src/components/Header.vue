@@ -31,9 +31,7 @@
 }
 
 .wrapper-header {
-    @apply flex justify-between items-center text-secondary py-4 sticky box-border;
-    width: 100vw; /* set width to full viewport width */
-    max-width: 100%; 
+    @apply flex justify-between items-center text-secondary py-4 w-full fixed box-border right-0 px-12 md:px-32 xl:px-48;
 }
 
 .wrapper-nav {
