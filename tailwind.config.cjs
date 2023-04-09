@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'quicksand': 'Quicksand, sans-serif',
+      'playfair-display': 'Playfair Display, sans-serif',
     },
     colors: {
       primary: '#F4F3F1',

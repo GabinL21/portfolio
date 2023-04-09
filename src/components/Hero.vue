@@ -20,7 +20,7 @@
 }
 
 h1 {
-    @apply text-5xl md:text-6xl xl:text-7xl xl:text-start text-center
+    @apply text-5xl md:text-6xl xl:text-7xl xl:text-start text-center font-playfair-display
 }
 h2 {
     @apply text-2xl md:text-3xl xl:text-4xl xl:text-start text-center mt-8
