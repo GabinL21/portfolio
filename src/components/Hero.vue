@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="wrapper">
+    <div class="wrapper-hero">
         <h1>Gabin <span class="bold">Laigle</span></h1>
         <h2>Relax, you found the right <span class="bold marker-underline">software engineer</span></h2>
         <div class="buttons">
@@ -15,8 +15,8 @@
 
 <style scoped>
 
-.wrapper {
-    @apply flex flex-col h-screen justify-center xl:items-start items-center px-12 md:px-32 xl:px-48
+.wrapper-hero {
+    @apply flex flex-col h-screen justify-center xl:items-start items-center
 }
 
 h1 {
