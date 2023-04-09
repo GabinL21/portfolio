@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import Hero from './components/Hero.vue'
-import NavBar from './components/NavBar.vue'
+import Header from './components/Header.vue'
 </script>
 
 <template>
   <div class="app-wrapper">
-    <NavBar />
+    <Header />
     <Hero />
   </div>
 </template>
