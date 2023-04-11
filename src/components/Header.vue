@@ -37,7 +37,7 @@
 }
 
 .wrapper-header {
-    @apply flex justify-between items-center text-secondary py-4 w-full fixed box-border right-0 px-12 md:px-32 xl:px-48;
+    @apply flex justify-between items-center text-secondary py-4 w-full fixed box-border right-0 px-8 md:px-32 xl:px-48;
 }
 
 .wrapper-nav {

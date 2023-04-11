@@ -8,7 +8,6 @@
         <h2>Relax, you found the right <span class="bold marker-underline">software engineer</span></h2>
         <div class="buttons">
             <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
-            <!-- <a href="mailto:gabin.laigle21@gmail.com"><div class="secondary-btn"><div class="secondary-btn-inside">Contact Me</div></div></a> -->
         </div>
     </div>
 </template>
