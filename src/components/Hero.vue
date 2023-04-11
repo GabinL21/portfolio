@@ -39,6 +39,7 @@ h2 {
     text-primary font-medium
     bg-accent-500 hover:bg-accent-400
     animate-fade animation-delay-1500 opacity-0
+    transition-colors ease-in-out duration-200
 }
 
 .marker-underline {
