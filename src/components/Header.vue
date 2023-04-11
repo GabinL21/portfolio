@@ -4,13 +4,13 @@
 
 <template>
     <header class="wrapper-header">
-        <div class="logo">
+        <a class="logo" href="https://gabin-laigle.com">
             <p class="icon">~</p>
             <p>gabin-laigle</p>
-        </div>
+        </a>
         <nav class="wrapper-nav">
-            <a class="selected-nav nav-item" href="#">Home</a>
-            <a class="nav-item" href="mailto:gabin.laigle21@gmail.com">Contact</a>
+            <!-- <a class="selected-nav nav-item" href="#">Home</a> -->
+            <a class="nav-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
         </nav>
     </header>
 </template>
