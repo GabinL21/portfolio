@@ -1,11 +1,37 @@
 <script setup lang="ts">
+import gsap from 'gsap';
+import { Sine } from 'gsap';
+import TextPlugin from 'gsap/TextPlugin';
 
+document.addEventListener('DOMContentLoaded', () => {
+    gsap.registerPlugin(TextPlugin);
+
+    // Define the array of text to display
+    const textArray = ['software engineer', 'creative developer', 'product manager', 'software engineer'];
+
+    // Create a timeline instance
+    const tl = gsap.timeline({ repeat: -1 });
+
+    // Loop through the text array
+    for (let i = 0; i < textArray.length; i++) {
+        // Create a to animation for each text element
+        const textAnimation = gsap.to('#carousel', { duration: 2, delay: (2 * i) * 2, text: textArray[i], ease: Sine.easeIn });
+        const spaceAnimation = gsap.to('#carousel', { duration: 2, delay: (2 * i + 1) * 2, text: '', ease: Sine.easeIn });
+
+        // Add the text animation to the timeline
+        tl.add(textAnimation, i*2);
+        tl.add(spaceAnimation, i*2+1);
+    }
+
+    // Start the timeline
+    tl.play();
+});
 </script>
 
 <template>
     <div class="wrapper-hero">
         <h1>Gabin <span class="bold">Laigle</span></h1>
-        <h2>Relax, you found the right <span class="bold marker-underline">software engineer</span></h2>
+        <h2>Relax, you found the right <span class="bold marker-underline" id="carousel">software engineer</span></h2>
         <div class="buttons">
             <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
         </div>
