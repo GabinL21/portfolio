@@ -9,8 +9,7 @@
             <p>gabin-laigle</p>
         </a>
         <nav class="wrapper-nav">
-            <!-- <a class="selected-nav nav-item" href="#">Home</a> -->
-            <a class="nav-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
+            <a class="secondary-nav-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
         </nav>
     </header>
 </template>
@@ -34,6 +33,10 @@
 
 .nav-item {
     @apply hover:font-semibold
+}
+
+.secondary-nav-item {
+    @apply border-2 rounded-full border-accent-500 py-1 px-4 hover:bg-accent-500 hover:bg-opacity-5
 }
 
 .wrapper-header {

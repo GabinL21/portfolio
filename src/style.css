@@ -7,5 +7,9 @@
 
 
 body {
-  @apply bg-primary text-secondary font-quicksand scroll-smooth overflow-hidden font-normal m-0 select-none
+  @apply bg-primary text-secondary font-quicksand scroll-smooth overflow-hidden font-normal m-0 select-none;
+  background-image: url('/src/assets/background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
