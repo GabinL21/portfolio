@@ -84,7 +84,7 @@ h1 {
 }
 
 .buttons {
-    @apply mt-32 flex flex-col space-y-8 md:flex-row md:space-x-8 md:space-y-0 items-center
+    @apply mt-24 md:mt-32 flex flex-col space-y-8 md:flex-row md:space-x-8 md:space-y-0 items-center
 }
 
 .primary-btn {
