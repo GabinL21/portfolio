@@ -1,13 +1,24 @@
 <script setup lang="ts">
 import gsap from 'gsap';
-import { Sine } from 'gsap';
+import { Sine, Power2 } from 'gsap';
 import TextPlugin from 'gsap/TextPlugin';
 
 document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(TextPlugin);
 
     // Define the array of text to display
-    const textArray = ['software engineer', 'creative developer', 'product manager', 'software engineer'];
+    const textArray = [
+        'software engineer', 
+        'Spring developer',
+        'design lover',
+        'Flutter enthusiast',
+        'ukulele player',
+        'Figma guru',
+        'clean coder',
+        'Notion addict',
+        'speedcuber'
+    ];
+    const delay = 4;
 
     // Create a timeline instance
     const tl = gsap.timeline({ repeat: -1 });
@@ -15,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Loop through the text array
     for (let i = 0; i < textArray.length; i++) {
         // Create a to animation for each text element
-        const textAnimation = gsap.to('#carousel', { duration: 2, delay: (2 * i) * 2, text: textArray[i], ease: Sine.easeIn });
-        const spaceAnimation = gsap.to('#carousel', { duration: 2, delay: (2 * i + 1) * 2, text: '', ease: Sine.easeIn });
+        const textAnimation = gsap.to('#carousel', { duration: 2, delay: 4 * i + delay * i, text: textArray[i], ease: Power2.easeInOut });
+        const spaceAnimation = gsap.to('#carousel', { duration: 2, delay: 4 * i + delay * (i + 1) + 2, text: '', ease: Sine.easeInOut });
 
         // Add the text animation to the timeline
         tl.add(textAnimation, i*2);
@@ -31,7 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
 <template>
     <div class="wrapper-hero">
         <h1>Gabin <span class="bold">Laigle</span></h1>
-        <h2>Relax, you found the right <span class="bold marker-underline" id="carousel">software engineer</span></h2>
+        <div class="subheader">
+            <div><span class="subheader-1">Relax, </span><span class="subheader-2">you found the right</span></div>
+            <div class="subheader-3"><span class="bold marker-underline" id="carousel"></span></div>
+        </div>
         <div class="buttons">
             <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
         </div>
@@ -47,9 +61,22 @@ document.addEventListener('DOMContentLoaded', () => {
 h1 {
     @apply text-6xl md:text-7xl xl:text-8xl xl:text-start text-center font-playfair-display mt-16
 }
-h2 {
+
+.subheader {
     @apply text-2xl md:text-3xl xl:text-4xl xl:text-start text-center mt-12
-    animate-fade animation-delay-500 opacity-0
+    flex flex-col md:flex-row items-center gap-3 space-y-0
+}
+
+.subheader-1 {
+    @apply animate-fade animation-delay-1500 opacity-0
+}
+
+.subheader-2 {
+    @apply animate-fade animation-delay-2000 opacity-0
+}
+
+.subheader-3 {
+    @apply animate-fade animation-delay-3000 opacity-0
 }
 
 .bold {
@@ -64,7 +91,7 @@ h2 {
     @apply
     text-primary font-medium
     bg-accent-500 hover:bg-accent-400
-    animate-fade animation-delay-1500 opacity-0
+    animate-fade animation-delay-5000 opacity-0
     transition-colors ease-in-out duration-200
     px-4 py-2 xl:px-5 xl:py-3
     text-base md:text-lg xl:text-xl
