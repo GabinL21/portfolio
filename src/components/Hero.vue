@@ -15,14 +15,14 @@
 <style scoped>
 
 .wrapper-hero {
-    @apply flex flex-col h-screen justify-center xl:items-start items-center
+    @apply flex flex-col h-screen justify-center items-center
 }
 
 h1 {
-    @apply text-5xl md:text-6xl xl:text-7xl xl:text-start text-center font-playfair-display
+    @apply text-6xl md:text-7xl xl:text-8xl xl:text-start text-center font-playfair-display mt-16
 }
 h2 {
-    @apply text-2xl md:text-3xl xl:text-4xl xl:text-start text-center mt-8
+    @apply text-2xl md:text-3xl xl:text-4xl xl:text-start text-center mt-12
     animate-fade animation-delay-500 opacity-0
 }
 
@@ -31,7 +31,7 @@ h2 {
 }
 
 .buttons {
-    @apply mt-16 flex flex-col space-y-8 md:flex-row md:space-x-8 md:space-y-0 items-center
+    @apply mt-32 flex flex-col space-y-8 md:flex-row md:space-x-8 md:space-y-0 items-center
 }
 
 .primary-btn {
