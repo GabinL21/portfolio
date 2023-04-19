@@ -35,13 +35,14 @@ h2 {
 }
 
 .primary-btn {
-    @apply rounded-lg 
+    @apply
     text-primary font-medium
     bg-accent-500 hover:bg-accent-400
     animate-fade animation-delay-1500 opacity-0
     transition-colors ease-in-out duration-200
-    px-4 py-2 xl:py-3
+    px-4 py-2 xl:px-5 xl:py-3
     text-base md:text-lg xl:text-xl
+    rounded-lg xl:rounded-xl
 }
 
 .marker-underline {
