@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const delay = 4;
 
     // Create a timeline instance
-    const tl = gsap.timeline({ repeat: -1 });
+    const tl = gsap.timeline({ repeat: -1, delay: 2.5 });
 
     // Loop through the text array
     for (let i = 0; i < textArray.length; i++) {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h1>Gabin <span class="bold">Laigle</span></h1>
         <div class="subheader">
             <div><span class="subheader-1">Relax, </span><span class="subheader-2">you found the right</span></div>
-            <div class="subheader-3"><span class="bold marker-underline" id="carousel"></span></div>
+            <div><span class="bold marker-underline" id="carousel"></span></div>
         </div>
         <div class="buttons">
             <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
@@ -64,19 +64,15 @@ h1 {
 
 .subheader {
     @apply text-2xl md:text-3xl xl:text-4xl xl:text-start text-center mt-12
-    flex flex-col md:flex-row items-center gap-0 md:gap-3 min-h-[3em]
+    flex flex-col md:flex-row items-center gap-0 md:gap-3 min-h-[3em] md:min-h-0
 }
 
 .subheader-1 {
-    @apply animate-fade animation-delay-1500 opacity-0
+    @apply animate-fade animation-delay-1000 opacity-0
 }
 
 .subheader-2 {
     @apply animate-fade animation-delay-2000 opacity-0
-}
-
-.subheader-3 {
-    @apply animate-fade animation-delay-3000 opacity-0
 }
 
 .bold {
