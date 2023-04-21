@@ -64,7 +64,7 @@ h1 {
 
 .subheader {
     @apply text-2xl md:text-3xl xl:text-4xl xl:text-start text-center mt-12
-    flex flex-col md:flex-row items-center gap-0 md:gap-3
+    flex flex-col md:flex-row items-center gap-0 md:gap-3 min-h-[3em]
 }
 
 .subheader-1 {
