@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import gsap from 'gsap';
-import { Sine, Power2 } from 'gsap';
+import gsap, { Sine, Power2 } from 'gsap';
 import TextPlugin from 'gsap/TextPlugin';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,11 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
         'Spring developer',
         'design lover',
         'Flutter enthusiast',
-        'ukulele player',
-        'Figma guru',
         'clean coder',
+        'Figma guru',
+        'ukulele player',
         'Notion addict',
-        'speedcuber'
+        'productivity nerd',
+        'Adobe aficionado',
+        'speedcuber',
+        'Firebase preacher',
+        'beatmaker',
+        'Minecraft expert'
     ];
     const delay = 4;
 
