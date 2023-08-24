@@ -9,8 +9,8 @@
             <p>gabin-laigle</p>
         </a>
         <nav class="wrapper-nav">
-            <a class="nav-item selected-nav">Home</a>
-            <a class="nav-item">Values</a>
+            <a class="nav-item selected-nav" href="#home">Home</a>
+            <a class="nav-item" href="#values">Values</a>
             <a class="secondary-nav-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
         </nav>
     </header>

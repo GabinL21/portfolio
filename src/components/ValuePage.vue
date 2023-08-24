@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="wrapper-values">
+    <div id="values" class="wrapper-values">
         <h1>What I Believe In</h1>
     </div>
 </template>

@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <template>
-    <div class="wrapper-hero">
+    <div id="home" class="wrapper-hero">
         <h1>Gabin Laigle</h1>
         <div class="subheader">
             <div><span class="subheader-1">Relax, </span><span class="subheader-2">you found the right</span></div>
