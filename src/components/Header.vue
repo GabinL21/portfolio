@@ -116,7 +116,9 @@ onMounted(() => {
 }
 
 .secondary-nav-item {
-  @apply border-2 rounded-full border-accent-500 py-1 px-4 hover:bg-accent-500 hover:bg-opacity-5;
+  @apply border-2 rounded-full border-accent-500 py-1 px-4 
+  hover:bg-accent-500 hover:bg-opacity-5
+  transition duration-200;
 }
 
 .menu-btn {
