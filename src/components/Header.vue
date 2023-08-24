@@ -9,6 +9,8 @@
             <p>gabin-laigle</p>
         </a>
         <nav class="wrapper-nav">
+            <a class="nav-item selected-nav">Home</a>
+            <a class="nav-item">Values</a>
             <a class="secondary-nav-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
         </nav>
     </header>
@@ -25,6 +27,7 @@
 }
 
 .selected-nav {
+    @apply font-semibold;
     background-image: linear-gradient(120deg, #F6805B 0%, #F25524 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
