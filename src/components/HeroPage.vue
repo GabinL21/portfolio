@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Loop through the text array
     for (let i = 0; i < textArray.length; i++) {
         // Create a to animation for each text element
-        const textAnimation = gsap.to('#carousel', { duration: 2, delay: 4 * i + delay * i, text: textArray[i], ease: Power2.easeInOut });
-        const spaceAnimation = gsap.to('#carousel', { duration: 2, delay: 4 * i + delay * (i + 1) + 2, text: '', ease: Sine.easeInOut });
+        const textAnimation = gsap.to('#carousel', { duration: 2, delay: 4 * i + delay * i - 1, text: textArray[i], ease: Power2.easeInOut });
+        const spaceAnimation = gsap.to('#carousel', { duration: 2, delay: 4 * i + delay * (i + 1) + 2, text: '', ease: Sine.easeIn });
 
         // Add the text animation to the timeline
         tl.add(textAnimation, i*2);
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <template>
-    <section id="home" class="wrapper-hero">
+    <section id="home" class="hero-wrapper">
         <h1>Gabin Laigle</h1>
         <div class="subheader">
             <div><span class="subheader-1">Relax, </span><span class="subheader-2">you found the right</span></div>
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <style scoped>
 
-.wrapper-hero {
+.hero-wrapper {
     @apply flex flex-col h-screen justify-center items-center snap-start
 }
 
@@ -72,11 +72,11 @@ h1 {
 }
 
 .subheader-1 {
-    @apply animate-fade animation-delay-1000 opacity-0
+    @apply animate-fade animation-delay-200 opacity-0 ease-out
 }
 
 .subheader-2 {
-    @apply animate-fade animation-delay-2000 opacity-0
+    @apply animate-fade animation-delay-1000 opacity-0 ease-out
 }
 
 .bold {
@@ -91,8 +91,8 @@ h1 {
     @apply
     text-primary font-medium
     bg-accent-500 hover:bg-accent-400
-    animate-fade animation-delay-5000 opacity-0
-    transition-colors ease-in-out duration-200
+    animate-fade animation-delay-3000 opacity-0
+    transition-colors ease-out duration-200
     px-4 py-2 xl:px-5 xl:py-3
     text-base md:text-lg xl:text-xl
     rounded-lg xl:rounded-xl
