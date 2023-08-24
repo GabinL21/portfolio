@@ -20,13 +20,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <header class="wrapper-header">
-    <div class="wrapper-center">
+  <header class="header-wrapper">
+    <div class="top-header-wrapper">
       <a class="logo" href="https://gabin-laigle.com">
         <p class="icon">~</p>
         <p>gabin-laigle</p>
       </a>
-      <nav class="wrapper-nav">
+      <nav class="nav-wrapper">
         <a class="nav-item" href="#home">Home</a>
         <a class="nav-item" href="#values">Values</a>
         <a class="secondary-nav-item" href="mailto:gabin.laigle21@gmail.com"
@@ -99,6 +99,18 @@ onMounted(() => {
   background-position: 0 100%;
 }
 
+.header-wrapper {
+  @apply flex flex-col justify-between items-start text-secondary py-4 w-full fixed box-border right-0 px-8 md:px-32 xl:px-48;
+}
+
+.top-header-wrapper {
+  @apply flex flex-row items-center justify-between w-full;
+}
+
+.nav-wrapper {
+  @apply hidden md:flex space-x-4 md:space-x-8 items-center text-secondary font-medium;
+}
+
 .nav-item {
   @apply hover:font-semibold;
 }
@@ -107,32 +119,20 @@ onMounted(() => {
   @apply border-2 rounded-full border-accent-500 py-1 px-4 hover:bg-accent-500 hover:bg-opacity-5;
 }
 
-.wrapper-header {
-  @apply flex flex-col justify-between items-start text-secondary py-4 w-full fixed box-border right-0 px-8 md:px-32 xl:px-48;
-}
-
-.wrapper-center {
-  @apply flex flex-row items-center justify-between w-full;
-}
-
-.wrapper-nav {
-  @apply hidden md:flex space-x-4 md:space-x-8 items-center text-secondary font-medium;
-}
-
-.menu-item {
-  @apply text-secondary;
+.menu-btn {
+  @apply flex md:hidden flex-col
+  hover:bg-secondary hover:bg-opacity-5;
 }
 
 .menu-items-wrapper {
   @apply flex flex-col md:hidden items-end w-full space-y-2;
 }
 
-.hide {
-  @apply hidden;
+.menu-item {
+  @apply hover:font-semibold;
 }
 
-.menu-btn {
-  @apply flex md:hidden flex-col
-  hover:bg-secondary hover:bg-opacity-5;
+.hide {
+  @apply hidden;
 }
 </style>
