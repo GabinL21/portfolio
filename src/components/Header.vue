@@ -3,52 +3,51 @@
 </script>
 
 <template>
-    <header class="wrapper-header">
-        <a class="logo" href="https://gabin-laigle.com">
-            <p class="icon">~</p>
-            <p>gabin-laigle</p>
-        </a>
-        <nav class="wrapper-nav">
-            <a class="nav-item selected-nav" href="#home">Home</a>
-            <a class="nav-item" href="#values">Values</a>
-            <a class="secondary-nav-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
-        </nav>
-    </header>
+  <header class="wrapper-header">
+    <a class="logo" href="https://gabin-laigle.com">
+      <p class="icon">~</p>
+      <p>gabin-laigle</p>
+    </a>
+    <nav class="wrapper-nav">
+      <a class="nav-item" href="#home">Home</a>
+      <a class="nav-item" href="#values">Values</a>
+      <a class="secondary-nav-item" href="mailto:gabin.laigle21@gmail.com"
+        >Contact Me</a
+      >
+    </nav>
+  </header>
 </template>
 
 <style scoped>
-
 .icon {
-    @apply text-accent-500 text-4xl font-normal;
+  @apply text-accent-500 text-4xl font-normal;
 }
 
 .logo {
-    @apply font-semibold text-lg flex space-x-2 items-center
+  @apply font-semibold text-lg flex space-x-2 items-center;
 }
 
-.selected-nav {
-    @apply font-semibold;
-    background-image: linear-gradient(120deg, #F6805B 0%, #F25524 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 100%;
+.active-nav {
+  @apply font-semibold pointer-events-none;
+  background-image: linear-gradient(120deg, #f6805b 0%, #f25524 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
 }
 
 .nav-item {
-    @apply hover:font-semibold
+  @apply hover:font-semibold;
 }
 
 .secondary-nav-item {
-    @apply border-2 rounded-full border-accent-500 py-1 px-4 hover:bg-accent-500 hover:bg-opacity-5
+  @apply border-2 rounded-full border-accent-500 py-1 px-4 hover:bg-accent-500 hover:bg-opacity-5;
 }
 
 .wrapper-header {
-    @apply flex justify-between items-center text-secondary py-4 w-full fixed box-border right-0 px-8 md:px-32 xl:px-48;
+  @apply flex justify-between items-center text-secondary py-4 w-full fixed box-border right-0 px-8 md:px-32 xl:px-48;
 }
 
 .wrapper-nav {
-    @apply flex space-x-4 md:space-x-8 items-center text-secondary font-medium;
+  @apply flex space-x-4 md:space-x-8 items-center text-secondary font-medium;
 }
-
 </style>
-

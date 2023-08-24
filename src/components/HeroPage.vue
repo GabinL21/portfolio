@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <template>
-    <div id="home" class="wrapper-hero">
+    <section id="home" class="wrapper-hero">
         <h1>Gabin Laigle</h1>
         <div class="subheader">
             <div><span class="subheader-1">Relax, </span><span class="subheader-2">you found the right</span></div>
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="buttons">
             <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
         </div>
-    </div>
+    </section>
 </template>
 
 <style scoped>
