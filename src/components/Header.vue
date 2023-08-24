@@ -3,10 +3,14 @@ import { onMounted } from "vue";
 
 onMounted(() => {
   const hamburger = document.querySelector(".hamburger-btn");
+  const hamburgerClosedIcon = document.querySelector(".hamburger-closed-icon");
+  const hamburgerOpenedIcon = document.querySelector(".hamburger-opened-icon");
   const hamburgerItems = document.querySelector(".hamburger-items");
 
   hamburger?.addEventListener("click", () => {
     hamburgerItems?.classList.toggle("hide");
+    hamburgerClosedIcon?.classList.toggle("hide");
+    hamburgerOpenedIcon?.classList.toggle("hide");
   });
 });
 </script>
@@ -27,6 +31,7 @@ onMounted(() => {
       </nav>
       <div class="hamburger-btn">
         <svg
+          class="hamburger-closed-icon"
           width="24px"
           height="24px"
           stroke-width="1.5"
@@ -37,6 +42,24 @@ onMounted(() => {
         >
           <path
             d="M3 5h18M3 12h18M3 19h18"
+            stroke="#000000"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        <svg
+          class="hamburger-opened-icon hide"
+          width="24px"
+          height="24px"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          color="#000000"
+        >
+          <path
+            d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"
             stroke="#000000"
             stroke-width="1.5"
             stroke-linecap="round"
@@ -85,7 +108,7 @@ onMounted(() => {
 }
 
 .wrapper-center {
-    @apply flex flex-row items-center justify-between w-full
+  @apply flex flex-row items-center justify-between w-full;
 }
 
 .wrapper-nav {
