@@ -130,10 +130,10 @@ onMounted(() => {
   overflow: visible;
 }
 .hamburger:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .hamburger.is-active:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,

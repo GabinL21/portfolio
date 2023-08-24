@@ -3,7 +3,7 @@
 
 <template>
     <section id="values" class="wrapper-values">
-        <h1>What I Believe In</h1>
+        <!-- <h1>What I Believe In</h1> -->
     </section>
 </template>
 
