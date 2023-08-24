@@ -15,6 +15,9 @@
         >Contact Me</a
       >
     </nav>
+    <nav class="wrapper-hamburger">
+        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </nav>
   </header>
 </template>
 
@@ -31,7 +34,7 @@
   @apply font-semibold pointer-events-none;
   background-image: linear-gradient(120deg, #f6805b 0%, #f25524 100%);
   background-repeat: no-repeat;
-  background-size: 100% 0.2em;
+  background-size: 100% 0.15em;
   background-position: 0 100%;
 }
 
@@ -48,6 +51,10 @@
 }
 
 .wrapper-nav {
-  @apply flex space-x-4 md:space-x-8 items-center text-secondary font-medium;
+  @apply hidden md:flex space-x-4 md:space-x-8 items-center text-secondary font-medium;
+}
+
+.wrapper-hamburger {
+    @apply flex md:hidden
 }
 </style>
