@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <template>
     <div class="wrapper-hero">
-        <h1>Gabin <span class="bold">Laigle</span></h1>
+        <h1>Gabin Laigle</h1>
         <div class="subheader">
             <div><span class="subheader-1">Relax, </span><span class="subheader-2">you found the right</span></div>
             <div><span class="bold marker-underline" id="carousel"></span></div>

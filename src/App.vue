@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import Hero from './components/Hero.vue'
-import Header from './components/Header.vue'
+import HeroPage from "./components/HeroPage.vue";
+import Header from "./components/Header.vue";
+import ValuePage from "./components/ValuePage.vue";
 </script>
 
 <template>
   <div class="app-wrapper">
     <Header />
-    <Hero />
+    <HeroPage />
+    <ValuePage />
   </div>
 </template>
 
 <style scoped>
 .app-wrapper {
-  @apply px-12 md:px-32 xl:px-48
+  @apply px-12 md:px-32 xl:px-48;
 }
 </style>
