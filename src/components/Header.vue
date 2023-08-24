@@ -2,16 +2,20 @@
 import { onMounted } from "vue";
 
 onMounted(() => {
-  const hamburger = document.querySelector(".hamburger-btn");
-  const hamburgerClosedIcon = document.querySelector(".hamburger-closed-icon");
-  const hamburgerOpenedIcon = document.querySelector(".hamburger-opened-icon");
-  const hamburgerItems = document.querySelector(".hamburger-items");
+  const menuBtn = document.querySelector(".menu-btn");
+  const menuClosedIcon = document.querySelector(".menu-closed-icon");
+  const menuOpenedIcon = document.querySelector(".menu-opened-icon");
+  const menuItemsWrapper = document.querySelector(".menu-items-wrapper");
+  const menuItems = document.querySelectorAll(".menu-item");
 
-  hamburger?.addEventListener("click", () => {
-    hamburgerItems?.classList.toggle("hide");
-    hamburgerClosedIcon?.classList.toggle("hide");
-    hamburgerOpenedIcon?.classList.toggle("hide");
-  });
+  function toggleMenu() {
+    menuItemsWrapper?.classList.toggle("hide");
+    menuClosedIcon?.classList.toggle("hide");
+    menuOpenedIcon?.classList.toggle("hide");
+  }
+
+  menuBtn?.addEventListener("click", toggleMenu);
+  menuItems.forEach(menuItem => menuItem.addEventListener("click", toggleMenu));
 });
 </script>
 
@@ -29,9 +33,9 @@ onMounted(() => {
           >Contact Me</a
         >
       </nav>
-      <div class="hamburger-btn">
+      <div class="menu-btn">
         <svg
-          class="hamburger-closed-icon"
+          class="menu-closed-icon"
           width="24px"
           height="24px"
           stroke-width="1.5"
@@ -49,7 +53,7 @@ onMounted(() => {
           ></path>
         </svg>
         <svg
-          class="hamburger-opened-icon hide"
+          class="menu-opened-icon hide"
           width="24px"
           height="24px"
           stroke-width="1.5"
@@ -68,10 +72,10 @@ onMounted(() => {
         </svg>
       </div>
     </div>
-    <div class="hamburger-items hide">
-      <a class="hamburger-item" href="#home">Home</a>
-      <a class="hamburger-item" href="#values">Values</a>
-      <a class="hamburger-item" href="mailto:gabin.laigle21@gmail.com"
+    <div class="menu-items-wrapper hide">
+      <a class="menu-item" href="#home">Home</a>
+      <a class="menu-item" href="#values">Values</a>
+      <a class="menu-item" href="mailto:gabin.laigle21@gmail.com"
         >Contact Me</a
       >
     </div>
@@ -115,19 +119,19 @@ onMounted(() => {
   @apply hidden md:flex space-x-4 md:space-x-8 items-center text-secondary font-medium;
 }
 
-.hamburger-item {
+.menu-item {
   @apply text-secondary;
 }
 
-.hamburger-items {
-  @apply flex flex-col md:hidden items-end w-full;
+.menu-items-wrapper {
+  @apply flex flex-col md:hidden items-end w-full space-y-2;
 }
 
 .hide {
   @apply hidden;
 }
 
-.hamburger-btn {
+.menu-btn {
   @apply flex md:hidden flex-col
   hover:bg-secondary hover:bg-opacity-5;
 }

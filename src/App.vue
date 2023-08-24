@@ -8,7 +8,7 @@ import { onMounted } from "vue";
 function updateActiveNavItem() {
   const sections = document.querySelectorAll("section");
   const navItems = document.querySelectorAll(".nav-item");
-  const hamburgerItems = document.querySelectorAll(".hamburger-item");
+  const menuItems = document.querySelectorAll(".menu-item");
 
   sections.forEach((section, index) => {
     const rect = section.getBoundingClientRect();
@@ -19,11 +19,11 @@ function updateActiveNavItem() {
       navItems.forEach((navItem) => {
         navItem.classList.remove("active-nav");
       });
-      hamburgerItems.forEach((hamburgerItem) => {
-        hamburgerItem.classList.remove("active-nav");
+      menuItems.forEach((menuItem) => {
+        menuItem.classList.remove("active-nav");
       });
       navItems[index].classList.add("active-nav");
-      hamburgerItems[index].classList.add("active-nav");
+      menuItems[index].classList.add("active-nav");
     }
   });
 }
