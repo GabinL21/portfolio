@@ -8,7 +8,8 @@ onMounted(() => {
   const hamburger = document.querySelector(".hamburger");
 
   function toggleMenu() {
-    menuItemsWrapper?.classList.toggle("hide");
+    menuItemsWrapper?.classList.remove("hide");
+    menuItemsWrapper?.classList.toggle("closed");
     hamburger?.classList.toggle("is-active");
   }
 
@@ -41,7 +42,7 @@ onMounted(() => {
         </button>
       </div>
     </div>
-    <div class="menu-items-wrapper hide">
+    <div class="menu-items-wrapper hide closed">
       <a class="menu-item" href="#home">Home</a>
       <a class="menu-item" href="#values">Values</a>
       <a class="menu-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
@@ -95,6 +96,10 @@ onMounted(() => {
 .menu-items-wrapper {
   @apply flex flex-col md:hidden items-end w-full space-y-2
   animate-fade-in-short;
+}
+
+.menu-items-wrapper.closed {
+  @apply animate-fade-out-short opacity-0;
 }
 
 .menu-item {
