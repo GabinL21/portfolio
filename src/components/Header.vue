@@ -42,7 +42,7 @@ onMounted(() => {
         </button>
       </div>
     </div>
-    <div class="menu-items-wrapper hide closed">
+    <div class="menu-items-wrapper closed">
       <a class="menu-item" href="#home">Home</a>
       <a class="menu-item" href="#values">Values</a>
       <a class="menu-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
@@ -94,12 +94,19 @@ onMounted(() => {
 }
 
 .menu-items-wrapper {
-  @apply flex flex-col md:hidden items-end w-full space-y-2
-  animate-fade-in-short;
+  @apply flex flex-col md:hidden items-end w-full space-y-2;
+}
+
+.menu-items-wrapper:not(.closed) {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 250ms linear;
 }
 
 .menu-items-wrapper.closed {
-  @apply animate-fade-out-short opacity-0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 250ms, opacity 250ms linear;
 }
 
 .menu-item {
