@@ -15,8 +15,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
-  border-radius: 3rem;
+  @apply w-1 md:w-2 rounded-full;
 }
 
 ::-webkit-scrollbar-track {
@@ -24,8 +23,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-accent-700 bg-opacity-70;
-  border-radius: 3rem;
+  @apply bg-accent-700 bg-opacity-70 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
