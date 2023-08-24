@@ -72,11 +72,11 @@ h1 {
 }
 
 .subheader-1 {
-    @apply animate-fade-in animation-delay-200 opacity-0 ease-out
+    @apply animate-fade-in animation-delay-200 opacity-0
 }
 
 .subheader-2 {
-    @apply animate-fade-in animation-delay-1000 opacity-0 ease-out
+    @apply animate-fade-in animation-delay-1000 opacity-0
 }
 
 .bold {
@@ -91,7 +91,7 @@ h1 {
     @apply
     text-primary font-medium
     bg-accent-500 hover:bg-accent-400
-    animate-fade-in animation-delay-3000 opacity-0
+    animate-fade-in animation-delay-3500 opacity-0
     transition-colors ease-out duration-200
     px-4 py-2 xl:px-5 xl:py-3
     text-base md:text-lg xl:text-xl

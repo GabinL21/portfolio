@@ -20,6 +20,11 @@ module.exports = {
         700: '#F6805B',
       },
     },
+    animationDelay: {
+      200: '200ms',
+      1000: '1000ms',
+      3500: '3500ms',
+    },
     extend: {
       animation: {
         'fade-in': 'fadeIn 750ms ease-out forwards',
@@ -28,12 +33,12 @@ module.exports = {
       },
       keyframes: theme => ({
         'fadeIn': {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
+          '0%': { opacity: 0, visbility: 'hidden' },
+          '100%': { opacity: 1, visbility: 'visible' },
         },
         'fadeOut': {
-          '0%': { opacity: 1 },
-          '100%': { opacity: 0 },
+          '0%': { opacity: 1, visbility: 'visible' },
+          '100%': { opacity: 0, visbility: 'hidden' },
         },
       }),
     },
