@@ -8,7 +8,6 @@ onMounted(() => {
   const hamburger = document.querySelector(".hamburger");
 
   function toggleMenu() {
-    menuItemsWrapper?.classList.remove("hide");
     menuItemsWrapper?.classList.toggle("closed");
     hamburger?.classList.toggle("is-active");
   }
@@ -30,9 +29,7 @@ onMounted(() => {
       <nav class="nav-wrapper">
         <a class="nav-item" href="#home">Home</a>
         <a class="nav-item" href="#values">Values</a>
-        <a class="secondary-nav-item" href="mailto:gabin.laigle21@gmail.com"
-          >Contact Me</a
-        >
+        <a class="secondary-nav-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
       </nav>
       <div class="menu-btn">
         <button class="hamburger hamburger--spin" type="button">
@@ -85,7 +82,7 @@ onMounted(() => {
 
 .secondary-nav-item {
   @apply border-2 rounded-full border-accent-500 py-1 px-4 
-  hover:bg-accent-500 hover:bg-opacity-5
+  hover:bg-accent-500 hover:bg-opacity-5 
   transition duration-200 ease-out;
 }
 
@@ -98,23 +95,15 @@ onMounted(() => {
 }
 
 .menu-items-wrapper:not(.closed) {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 250ms linear;
+  @apply visible opacity-100 transition-all duration-300 ease-out;
 }
 
 .menu-items-wrapper.closed {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 250ms, opacity 250ms linear;
+  @apply invisible opacity-0 transition-all duration-300 ease-in;
 }
 
 .menu-item {
   @apply hover:font-semibold;
-}
-
-.hide {
-  @apply hidden;
 }
 
 /*
@@ -136,12 +125,15 @@ onMounted(() => {
   margin: 0;
   overflow: visible;
 }
+
 .hamburger:hover {
   opacity: 0.5;
 }
+
 .hamburger.is-active:hover {
   opacity: 0.5;
 }
+
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
@@ -160,6 +152,7 @@ onMounted(() => {
   top: 50%;
   margin-top: -2px;
 }
+
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
@@ -172,14 +165,17 @@ onMounted(() => {
   transition-duration: 0.15s;
   transition-timing-function: ease;
 }
+
 .hamburger-inner::before,
 .hamburger-inner::after {
   content: "";
   display: block;
 }
+
 .hamburger-inner::before {
   top: -6px;
 }
+
 .hamburger-inner::after {
   bottom: -6px;
 }
@@ -191,9 +187,11 @@ onMounted(() => {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
 .hamburger--spin .hamburger-inner::before {
   transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
+
 .hamburger--spin .hamburger-inner::after {
   transition: bottom 0.1s 0.25s ease-in,
     transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -204,11 +202,13 @@ onMounted(() => {
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .hamburger--spin.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
+
 .hamburger--spin.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(-90deg);
@@ -223,9 +223,11 @@ onMounted(() => {
   transition-duration: 0.22s;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
+
 .hamburger--spin-r .hamburger-inner::before {
   transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
+
 .hamburger--spin-r .hamburger-inner::after {
   transition: bottom 0.1s 0.25s ease-in,
     transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -236,11 +238,13 @@ onMounted(() => {
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 .hamburger--spin-r.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
+
 .hamburger--spin-r.is-active .hamburger-inner::after {
   bottom: 0;
   transform: rotate(90deg);

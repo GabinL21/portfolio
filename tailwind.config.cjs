@@ -27,18 +27,12 @@ module.exports = {
     },
     extend: {
       animation: {
-        'fade-in': 'fadeIn 750ms ease-out forwards',
-        'fade-in-short': 'fadeIn 250ms ease-out forwards',
-        'fade-out-short': 'fadeOut 250ms ease-in forwards',
+        'fade-in': 'fade 750ms ease-out forwards',
       },
       keyframes: theme => ({
-        'fadeIn': {
-          '0%': { opacity: 0, visbility: 'hidden' },
-          '100%': { opacity: 1, visbility: 'visible' },
-        },
-        'fadeOut': {
-          '0%': { opacity: 1, visbility: 'visible' },
-          '100%': { opacity: 0, visbility: 'hidden' },
+        'fade': {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
         },
       }),
     },
