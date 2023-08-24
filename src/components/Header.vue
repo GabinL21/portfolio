@@ -94,14 +94,10 @@ onMounted(() => {
 
 .menu-items-wrapper {
   @apply flex flex-col md:hidden items-end w-full space-y-2
-  animate-bounce opacity-100 transition ease-in anima;
+  animate-fade-in-short;
 }
 
 .menu-item {
-  @apply hover:font-semibold;
-}
-
-.menu-item :not(.hide) {
   @apply hover:font-semibold;
 }
 
