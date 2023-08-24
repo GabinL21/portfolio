@@ -14,6 +14,7 @@ import ValuePage from "./components/ValuePage.vue";
 
 <style scoped>
 .app-wrapper {
-  @apply px-12 md:px-32 xl:px-48;
+  @apply px-12 md:px-32 xl:px-48
+  h-screen overflow-y-scroll snap-y snap-mandatory
 }
 </style>

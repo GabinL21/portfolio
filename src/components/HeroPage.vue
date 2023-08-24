@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <style scoped>
 
 .wrapper-hero {
-    @apply flex flex-col h-screen justify-center items-center
+    @apply flex flex-col h-screen justify-center items-center snap-start
 }
 
 h1 {

@@ -9,7 +9,7 @@
 
 <style scoped>
 .wrapper-values {
-    @apply flex flex-col h-screen justify-center items-center
+    @apply flex flex-col h-screen justify-center items-center snap-start
 }
 
 h1 {
