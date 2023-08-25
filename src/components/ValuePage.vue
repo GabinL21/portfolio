@@ -31,9 +31,9 @@ onMounted(() => {
     <section id="values" class="values-wrapper">
         <h1>What I Believe In</h1>
         <div class="values-logo">
-            <img src="src/assets/logo/logo_part1.svg" alt="logo part1" class="part part1 active-part">
-            <img src="src/assets/logo/logo_part2.svg" alt="logo part2" class="part part2 pulse-part">
-            <img src="src/assets/logo/logo_part3.svg" alt="logo part3" class="part part3 pulse-part">
+            <img src="../assets/logo/logo_part1.svg" alt="logo part1" class="part part1 active-part">
+            <img src="../assets/logo/logo_part2.svg" alt="logo part2" class="part part2 pulse-part">
+            <img src="../assets/logo/logo_part3.svg" alt="logo part3" class="part part3 pulse-part">
         </div>
         <div class="values-items">
             <ValueItem class="value value1 active-value" title="User-driven" content="I love software, but the need is the base of everything. The 'problem' is as crucial as the 'solving'." />
