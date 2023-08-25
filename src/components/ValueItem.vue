@@ -25,6 +25,6 @@ defineProps(["title", "content"]);
 }
 
 .separator {
-    @apply h-1 rounded-full bg-accent-500 w-5/6;
+    @apply h-1 rounded-full bg-accent-500 w-5/6 md:w-1/2;
 }
 </style>

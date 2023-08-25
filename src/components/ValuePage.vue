@@ -36,16 +36,16 @@ onMounted(() => {
             <img src="src/assets/logo/logo_part3.svg" alt="logo part3" class="part part3 pulse-part">
         </div>
         <div class="values-items">
-            <ValueItem class="value value1" title="Product-focused" content="As much as I love software it is just a tool, the need is at the center of everything." />
-            <ValueItem class="value value2" title="Product-focused2" content="As much as I love software it is just a tool, the need is at the center of everything." />
-            <ValueItem class="value value3" title="Product-focused3" content="As much as I love software it is just a tool, the need is at the center of everything." />
+            <ValueItem class="value value1" title="User-driven" content="As much as I love software it is just a tool. The need is at the center of everything." />
+            <ValueItem class="value value2" title="Generalist" content="Humans are best at making connections. Improving in a domain is improving in every other domains too." />
+            <ValueItem class="value value3" title="Kaizen User" content="Continuous improvement is one of my favorite subject. Improving and optimizing each thing can lead to great things." />
         </div>
     </section>
 </template>
 
 <style scoped>
 .values-wrapper {
-    @apply flex flex-col h-screen justify-center items-center snap-start space-y-32 md:space-y-48
+    @apply flex flex-col h-screen justify-around items-center snap-start
 }
 
 .values-logo {
@@ -66,7 +66,7 @@ onMounted(() => {
 }
 
 .values-items {
-    @apply flex items-center w-2/3 md:w-1/3;
+    @apply flex items-center w-3/4 md:w-1/3;
 }
 
 h1 {
