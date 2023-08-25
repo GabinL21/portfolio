@@ -21,6 +21,7 @@ module.exports = {
       },
     },
     animationDelay: {
+      0: '0ms',
       200: '200ms',
       1000: '1000ms',
       3500: '3500ms',
