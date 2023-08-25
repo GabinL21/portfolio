@@ -9,20 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const textArray = [
         'software engineer', 
         'Spring developer',
-        'design lover',
-        'Flutter enthusiast',
+        'CS valedictorian',
+        'JetBrains fan',
         'clean coder',
-        'Figma guru',
-        'ukulele player',
+        'Flutter enthusiast',
+        'design lover',
         'Notion addict',
+        'ukulele player',
+        'Figma guru',
         'productivity nerd',
         'Adobe aficionado',
         'speedcuber',
         'Firebase preacher',
         'beatmaker',
         'Minecraft expert',
-        'book user',
-        'JetBrains fan',
     ];
 
     const initialDelay = 1.5;
