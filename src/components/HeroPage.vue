@@ -20,26 +20,32 @@ document.addEventListener('DOMContentLoaded', () => {
         'speedcuber',
         'Firebase preacher',
         'beatmaker',
-        'Minecraft expert'
+        'Minecraft expert',
+        'book user',
+        'JetBrains fan',
     ];
 
     const initialDelay = 1.5;
-    const durationTextWriting = 1;
+    const durationCharWriting = 0.05;
     const durationTextStaying = 3;
     const durationTextErasing = 1;
-    const totalDuration = durationTextWriting + durationTextStaying + durationTextErasing;
-    const overrideTiming = 1; // To reduce the amount of time spent when no words are written
+    const overrideTiming = 0.5; // To reduce the amount of time spent when no words are written
     const textWritingEase = 'none';
-    const textErasingEase = Sine.easeInOut;
+    const textErasingEase = Sine.easeIn;
 
     // Create a timeline instance
     const tl = gsap.timeline({ repeat: -1, delay: initialDelay + overrideTiming });
 
     // Loop through the text array
+    let totalDelay = 0;
     for (let i = 0; i < textArray.length; i++) {
+        let text = textArray[i];
+        let durationTextWriting = text.length * durationCharWriting;
         // Create an animation for each text element
-        const textAnimation = gsap.to('#carousel', { duration: durationTextWriting, delay: totalDuration * i - overrideTiming, text: textArray[i], ease: textWritingEase });
-        const spaceAnimation = gsap.to('#carousel', { duration: durationTextErasing, delay: totalDuration * i + durationTextWriting + durationTextStaying, text: '', ease: textErasingEase });
+        const textAnimation = gsap.to('#carousel', { duration: durationTextWriting, delay: totalDelay - overrideTiming, text: text, ease: textWritingEase });
+        totalDelay += (durationTextWriting + durationTextStaying);
+        const spaceAnimation = gsap.to('#carousel', { duration: durationTextErasing, delay: totalDelay, text: '', ease: textErasingEase });
+        totalDelay += durationTextErasing;
 
         // Add the text animation to the timeline
         tl.add(textAnimation, i*2);
