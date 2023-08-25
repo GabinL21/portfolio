@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 
 h1 {
-    @apply text-6xl md:text-7xl xl:text-8xl xl:text-start text-center font-playfair-display mt-16
+    @apply text-6xl md:text-7xl xl:text-8xl text-center font-playfair-display mt-16
 }
 
 .subheader {

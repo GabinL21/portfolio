@@ -21,6 +21,7 @@ module.exports = {
       },
     },
     animationDelay: {
+      0: '0ms',
       200: '200ms',
       1000: '1000ms',
       3500: '3500ms',
@@ -28,11 +29,15 @@ module.exports = {
     extend: {
       animation: {
         'fade-in': 'fade 750ms ease-out forwards',
+        'fade-in-short': 'fade 500ms ease-out forwards',
       },
       keyframes: theme => ({
         'fade': {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
+        },
+        'pulse': {
+          '50%' : { opacity: 0.25 },
         },
       }),
     },
