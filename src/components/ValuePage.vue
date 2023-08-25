@@ -1,4 +1,21 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
+
+onMounted(() => {
+    const logoPart1 = document.querySelector(".part1");
+    const logoPart2 = document.querySelector(".part2");
+    const logoPart3 = document.querySelector(".part3");
+
+    const logoParts = [logoPart1, logoPart2, logoPart3];
+
+    function selectPart(activeLogoPart: Element) {
+        logoParts.forEach(logoPart => logoPart?.classList.remove("active-part"));
+        activeLogoPart.classList.add("active-part");
+    }
+
+    logoParts.forEach(logoPart => logoPart?.addEventListener("mouseover", () => selectPart(logoPart)));
+    logoParts.forEach(logoPart => logoPart?.addEventListener("touchstart", () => selectPart(logoPart)));
+});
 </script>
 
 <template>
@@ -26,7 +43,7 @@
     filter: invert(84%) sepia(90%) saturate(615%) hue-rotate(294deg) brightness(93%) contrast(104%);
 }
 
-.part:hover {
+.part.active-part {
     filter: invert(45%) sepia(28%) saturate(6471%) hue-rotate(347deg) brightness(97%) contrast(96%);
 }
 
