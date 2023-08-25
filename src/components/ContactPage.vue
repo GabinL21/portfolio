@@ -6,6 +6,7 @@
     <section id="contact" class="contact-wrapper">
         <div class="content">
             <h1>Contact Me</h1>
+            <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Find me on LinkedIn</div></a>
         </div>
         <div class="footer">
             <div class="icons">
@@ -19,12 +20,23 @@
 </template>
 
 <style scoped>
+
+.primary-btn {
+    @apply
+    text-primary font-medium
+    bg-accent-500 hover:bg-accent-400
+    transition-colors ease-out duration-300
+    px-4 py-2 xl:px-5 xl:py-3
+    text-base md:text-lg xl:text-xl
+    rounded-lg xl:rounded-xl
+}
+
 .contact-wrapper {
     @apply flex flex-col h-screen justify-center space-y-24 md:space-y-32 items-center snap-start
 }
 
 .content {
-    @apply h-4/5 flex flex-col items-center justify-center;
+    @apply h-4/5 flex flex-col items-center justify-around;
 }
 
 .footer {
