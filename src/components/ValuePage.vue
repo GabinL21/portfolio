@@ -16,10 +16,12 @@ onMounted(() => {
     function selectPart(activeLogoPart: Element) {
         logoParts.forEach(logoPart => logoPart?.classList.remove("active-part"));
         activeLogoPart.classList.add("active-part");
+        activeLogoPart.classList.add("clicked-part");
         activeLogoPart.classList.remove("pulse-part");
         let index = logoParts.indexOf(activeLogoPart);
         valueItems.forEach(valueItem => valueItem?.classList.remove("active-value"));
         valueItems[index]?.classList.add("active-value");
+        if (activeLogoPart === logoPart2 && !logoPart3?.classList.contains("clicked-part")) logoPart3?.classList.add("pulse-part");
     }
 
     logoParts.forEach(logoPart => logoPart?.addEventListener("mouseenter", () => selectPart(logoPart)));
@@ -33,7 +35,7 @@ onMounted(() => {
         <div class="values-logo">
             <img src="../assets/logo/logo_part1.svg" alt="logo part1" class="part part1 active-part">
             <img src="../assets/logo/logo_part2.svg" alt="logo part2" class="part part2 pulse-part">
-            <img src="../assets/logo/logo_part3.svg" alt="logo part3" class="part part3 pulse-part">
+            <img src="../assets/logo/logo_part3.svg" alt="logo part3" class="part part3">
         </div>
         <div class="values-items">
             <ValueItem class="value value1 active-value" title="User-driven" content="I love software, but the need is the base of everything. The 'problem' is as crucial as the 'solving'." />
@@ -61,12 +63,12 @@ onMounted(() => {
     @apply animate-pulse;
 }
 
-.part.part2.pulse-part {
-    @apply animation-delay-0;
+.part3.pulse-part {
+    @apply opacity-100;
 }
 
-.part.part3.pulse-part {
-    @apply animation-delay-200;
+.part.part3:not(.pulse-part):not(.clicked-part) {
+    @apply opacity-30;
 }
 
 .part.active-part {

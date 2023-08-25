@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import gsap, { Sine, Power2 } from 'gsap';
+import gsap, { Sine } from 'gsap';
 import TextPlugin from 'gsap/TextPlugin';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -59,25 +59,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <template>
     <section id="home" class="hero-wrapper">
-        <h1>Gabin Laigle</h1>
-        <div class="subheader">
-            <div><span class="subheader-1">Relax, </span><span class="subheader-2">you found the right</span></div>
-            <div><span class="bold marker-underline" id="carousel"></span></div>
-        </div>
-        <div class="buttons">
-            <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
-        </div>
+            <h1>Gabin Laigle</h1>
+            <div class="subheader">
+                <div><span class="subheader-1">Relax, </span><span class="subheader-2">you found the right</span></div>
+                <div><span class="bold marker-underline" id="carousel"></span></div>
+            </div>
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
+            </div>
+            <div class="footer">
+                <a href="#values"><img src="../assets/scroll-down-icon.svg" alt="scroll down icon" class="scroll-down"/></a>
+            </div>
     </section>
+            
 </template>
 
 <style scoped>
-
 .hero-wrapper {
-    @apply flex flex-col h-screen justify-center items-center snap-start
+    @apply flex flex-col h-screen items-center justify-center snap-start;
+}
+
+.content {
+    @apply flex flex-col justify-around items-center;
+}
+
+.footer {
+    @apply flex flex-col justify-center items-center h-4 mt-32;
 }
 
 h1 {
-    @apply text-6xl md:text-7xl xl:text-8xl text-center font-playfair-display mt-16
+    @apply text-6xl md:text-7xl xl:text-8xl text-center font-playfair-display mt-48
 }
 
 .subheader {
@@ -119,4 +130,8 @@ h1 {
   background-position: 0 92%;
 }
 
+.scroll-down {
+    @apply h-8 hover:translate-y-2 transition-opacity duration-1000
+    animate-bounce animation-delay-7000 opacity-0;
+}
 </style>
