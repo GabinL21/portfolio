@@ -6,6 +6,10 @@
     <section id="contact" class="contact-wrapper">
         <div class="content">
             <h1>Contact Me</h1>
+            <div class="text">
+                <p>A <span class="bold">project?</span> An <span class="bold">idea?</span></p>
+                <p>Want to <span class="bold">learn more?</span></p>
+            </div>
             <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Find me on LinkedIn</div></a>
         </div>
         <div class="footer">
@@ -29,6 +33,14 @@
     px-4 py-2 xl:px-5 xl:py-3
     text-base md:text-lg xl:text-xl
     rounded-lg xl:rounded-xl
+}
+
+.text {
+    @apply text-2xl md:text-3xl xl:text-4xl text-center
+}
+
+.bold {
+    @apply font-medium;
 }
 
 .contact-wrapper {
