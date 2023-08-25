@@ -11,6 +11,7 @@ onMounted(() => {
     function selectPart(activeLogoPart: Element) {
         logoParts.forEach(logoPart => logoPart?.classList.remove("active-part"));
         activeLogoPart.classList.add("active-part");
+        activeLogoPart.classList.remove("pulse-part");
     }
 
     logoParts.forEach(logoPart => logoPart?.addEventListener("mouseover", () => selectPart(logoPart)));
@@ -22,16 +23,16 @@ onMounted(() => {
     <section id="values" class="values-wrapper">
         <h1>What I Believe In</h1>
         <div class="values-logo">
-            <img src="src/assets/logo/logo_part1.svg" alt="logo part1" class="part part1">
-            <img src="src/assets/logo/logo_part2.svg" alt="logo part2" class="part part2">
-            <img src="src/assets/logo/logo_part3.svg" alt="logo part3" class="part part3">
+            <img src="src/assets/logo/logo_part1.svg" alt="logo part1" class="part part1 pulse-part">
+            <img src="src/assets/logo/logo_part2.svg" alt="logo part2" class="part part2 pulse-part">
+            <img src="src/assets/logo/logo_part3.svg" alt="logo part3" class="part part3 pulse-part">
         </div>
     </section>
 </template>
 
 <style scoped>
 .values-wrapper {
-    @apply flex flex-col h-screen justify-center items-center snap-start space-y-64
+    @apply flex flex-col h-screen justify-center items-center snap-start space-y-32 md:space-y-64
 }
 
 .values-logo {
@@ -41,6 +42,18 @@ onMounted(() => {
 .part {
     @apply h-full transition-all duration-500;
     filter: invert(84%) sepia(90%) saturate(615%) hue-rotate(294deg) brightness(93%) contrast(104%);
+}
+
+.part.pulse-part {
+    @apply animate-pulse;
+}
+
+.part.part2.pulse-part {
+    @apply animation-delay-200;
+}
+
+.part.part3.pulse-part {
+    @apply animation-delay-400;
 }
 
 .part.active-part {
