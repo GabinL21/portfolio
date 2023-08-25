@@ -5,9 +5,9 @@
     <section id="values" class="values-wrapper">
         <h1>What I Believe In</h1>
         <div class="values-logo">
-            <img src="../assets/part1.svg" alt="logo part1" class="part part1">
-            <img src="../assets/part2.svg" alt="logo part1" class="part part2">
-            <img src="../assets/part3.svg" alt="logo part1" class="part part3">
+            <img src="src/assets/logo/part1.svg" alt="logo part1" class="part part1">
+            <img src="src/assets/logo/part2.svg" alt="logo part1" class="part part2">
+            <img src="src/assets/logo/part3.svg" alt="logo part1" class="part part3">
         </div>
     </section>
 </template>
