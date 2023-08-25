@@ -36,20 +36,20 @@ onMounted(() => {
             <img src="src/assets/logo/logo_part3.svg" alt="logo part3" class="part part3 pulse-part">
         </div>
         <div class="values-items">
-            <ValueItem class="value value1" title="User-driven" content="As much as I love software it is just a tool. The need is at the center of everything." />
+            <ValueItem class="value value1" title="User-driven" content="As much as I love software, it is just a tool. The 'problem' is as important as the 'solving'." />
             <ValueItem class="value value2" title="Generalist" content="Humans are best at making connections. Improving in a domain is improving in every other domains too." />
-            <ValueItem class="value value3" title="Kaizen User" content="Continuous improvement is one of my favorite subject. Improving and optimizing each thing can lead to great things." />
+            <ValueItem class="value value3" title="Kaizen User" content="Continuous improvement is one of my favorite subject. Small gains compound to great results." />
         </div>
     </section>
 </template>
 
 <style scoped>
 .values-wrapper {
-    @apply flex flex-col h-screen justify-around items-center snap-start
+    @apply flex flex-col h-screen justify-center space-y-24 md:space-y-32 items-center snap-start
 }
 
 .values-logo {
-    @apply flex flex-row items-center h-16 md:h-32;
+    @apply flex flex-row items-center h-16 md:h-24;
 }
 
 .part {
@@ -66,18 +66,18 @@ onMounted(() => {
 }
 
 .values-items {
-    @apply flex items-center w-3/4 md:w-1/3;
+    @apply flex items-center w-64 2xl:w-96;
 }
 
 h1 {
-    @apply text-6xl md:text-7xl xl:text-8xl xl:text-start text-center font-playfair-display mt-16
+    @apply text-5xl md:text-6xl xl:text-7xl text-center font-playfair-display mt-16;
 }
 
-.value {
+.value:not(.active-value) {
     @apply hidden;
 }
 
 .value.active-value {
-    @apply flex;
+    @apply animate-fade-in-short opacity-0;
 }
 </style>

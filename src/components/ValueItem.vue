@@ -13,18 +13,21 @@ defineProps(["title", "content"]);
 
 <style scoped>
 .wrapper {
-    @apply flex flex-col items-center space-y-2 md:space-y-8;
+    @apply flex flex-col items-center space-y-2 md:space-y-4;
 }
 
 .title {
-    @apply font-semibold text-3xl md:text-5xl text-center;
+    @apply font-semibold text-center text-3xl md:text-4xl;
 }
 
 .content {
-    @apply font-normal text-lg md:text-3xl text-center;
+    @apply font-normal text-center w-full text-lg md:text-xl;
 }
 
 .separator {
-    @apply h-1 rounded-full bg-accent-500 w-5/6 md:w-1/2;
+    @apply h-1 rounded-full w-2/3;
+    background-image: linear-gradient(120deg, #f6805b 0%, #f25524 100%);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
 }
 </style>

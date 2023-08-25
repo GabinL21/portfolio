@@ -28,6 +28,7 @@ module.exports = {
     extend: {
       animation: {
         'fade-in': 'fade 750ms ease-out forwards',
+        'fade-in-short': 'fade 500ms ease-out forwards',
       },
       keyframes: theme => ({
         'fade': {
