@@ -37,7 +37,7 @@ module.exports = {
           '100%': { opacity: 1 },
         },
         'pulse': {
-          '50%' : { opacity: 0.25 },
+          '50%' : { opacity: 0.3 },
         },
       }),
     },
