@@ -57,7 +57,7 @@ onMounted(() => {
 }
 
 .active-nav {
-  @apply font-semibold pointer-events-none;
+  @apply font-semibold pointer-events-none rounded-sm;
   background-image: linear-gradient(120deg, #f6805b 0%, #f25524 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.15em;
