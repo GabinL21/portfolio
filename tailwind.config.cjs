@@ -21,8 +21,7 @@ module.exports = {
       0: "0ms",
       200: "200ms",
       1000: "1000ms",
-      3500: "3500ms",
-      7000: "7000ms",
+      5000: "5000ms",
     },
     extend: {
       animation: {
