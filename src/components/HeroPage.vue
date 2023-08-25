@@ -131,6 +131,7 @@ h1 {
 }
 
 .scroll-down {
-    @apply animate-bounce h-8;
+    @apply h-8 hover:translate-y-2 transition-opacity duration-1000
+    animate-bounce animation-delay-5000 opacity-0;
 }
 </style>
