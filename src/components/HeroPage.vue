@@ -22,16 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
         'beatmaker',
         'Minecraft expert'
     ];
-    const delay = 4;
+
+    const initialDelay = 1.5;
+    const durationTextWriting = 1;
+    const durationTextStaying = 3;
+    const durationTextErasing = 1;
+    const totalDuration = durationTextWriting + durationTextStaying + durationTextErasing;
+    const overrideTiming = 1; // To reduce the amount of time spent when no words are written
+    const textWritingEase = 'none';
+    const textErasingEase = Sine.easeInOut;
 
     // Create a timeline instance
-    const tl = gsap.timeline({ repeat: -1, delay: 2.5 });
+    const tl = gsap.timeline({ repeat: -1, delay: initialDelay + overrideTiming });
 
     // Loop through the text array
     for (let i = 0; i < textArray.length; i++) {
-        // Create a to animation for each text element
-        const textAnimation = gsap.to('#carousel', { duration: 2, delay: 4 * i + delay * i - 1, text: textArray[i], ease: Power2.easeInOut });
-        const spaceAnimation = gsap.to('#carousel', { duration: 2, delay: 4 * i + delay * (i + 1) + 2, text: '', ease: Sine.easeIn });
+        // Create an animation for each text element
+        const textAnimation = gsap.to('#carousel', { duration: durationTextWriting, delay: totalDuration * i - overrideTiming, text: textArray[i], ease: textWritingEase });
+        const spaceAnimation = gsap.to('#carousel', { duration: durationTextErasing, delay: totalDuration * i + durationTextWriting + durationTextStaying, text: '', ease: textErasingEase });
 
         // Add the text animation to the timeline
         tl.add(textAnimation, i*2);
