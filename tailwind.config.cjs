@@ -22,7 +22,6 @@ module.exports = {
     },
     animationDelay: {
       200: '200ms',
-      400: '400ms',
       1000: '1000ms',
       3500: '3500ms',
     },
@@ -34,6 +33,9 @@ module.exports = {
         'fade': {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
+        },
+        'pulse': {
+          '50%' : { opacity: 0.25 },
         },
       }),
     },

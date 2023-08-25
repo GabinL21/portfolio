@@ -40,20 +40,12 @@ onMounted(() => {
 }
 
 .part {
-    @apply h-full transition-all duration-500;
+    @apply h-full transition-all duration-300;
     filter: invert(84%) sepia(90%) saturate(615%) hue-rotate(294deg) brightness(93%) contrast(104%);
 }
 
 .part.pulse-part {
     @apply animate-pulse;
-}
-
-.part.part2.pulse-part {
-    @apply animation-delay-200;
-}
-
-.part.part3.pulse-part {
-    @apply animation-delay-400;
 }
 
 .part.active-part {
