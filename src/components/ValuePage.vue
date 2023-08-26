@@ -38,9 +38,9 @@ onMounted(() => {
             <img src="../assets/logo/logo_part3.svg" alt="logo part3" class="part part3">
         </div>
         <div class="values-items">
-            <ValueItem class="value value1 active-value" title="User-driven" content="I love software, but the need is the base of everything. The 'problem' is as crucial as the 'solving'." />
-            <ValueItem class="value value2" title="Generalist" content="Humans are best at making connections. Improving in a domain is improving in every other one." />
-            <ValueItem class="value value3" title="Kaizen-focused" content="Continuous improvement is one of my favorite subjects. Small gains compound to great results." />
+            <ValueItem class="value value1 active-value" title="User-driven" content="I love software, but <b>the need is the base of everything</b>. The 'problem' is as crucial as the 'solving'." />
+            <ValueItem class="value value2" title="Generalist" content="Humans are <b>best at making connections</b>. Improving in a domain is improving in every other one." />
+            <ValueItem class="value value3" title="Kaizen-focused" content="Continuous improvement is one of my favorite subjects. <b>Small gains compound</b> to great results." />
         </div>
     </section>
 </template>

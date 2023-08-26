@@ -7,7 +7,7 @@ defineProps(["title", "content"]);
     <div class="wrapper">
         <h2 class="title">{{ title }}</h2>
         <div class="separator"></div>
-        <p class="content">{{ content }}</p>
+        <p class="content" v-html="content"></p>
     </div>
 </template>
 
