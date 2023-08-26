@@ -40,10 +40,11 @@
     px-4 py-2 xl:px-5 xl:py-3
     text-base md:text-lg xl:text-xl
     rounded-lg xl:rounded-xl
+    animate-bounce
 }
 
 .content {
-    @apply h-5/6 flex flex-col items-center justify-center space-y-16 mt-16;
+    @apply h-5/6 flex flex-col items-center justify-center space-y-16 mt-24;
 }
 
 .profile-wrapper {
@@ -63,7 +64,7 @@
 }
 
 .footer {
-    @apply h-1/6 flex flex-col items-center justify-center space-y-4;
+    @apply h-1/6 flex flex-col items-center justify-center space-y-4 text-secondary-700;
 }
 
 .icons {
@@ -71,11 +72,11 @@
 }
 
 .icon {
-    @apply text-secondary hover:text-accent-700 h-7 transition-all duration-200;
+    @apply hover:text-secondary-500 h-7 transition-all duration-200;
 }
 
 .terms {
-    @apply hover:text-accent-500 text-sm md:text-base transition-all duration-200;
+    @apply hover:text-secondary-500 text-sm md:text-base transition-all duration-200;
 }
 
 h1 {
