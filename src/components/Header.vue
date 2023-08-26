@@ -29,7 +29,7 @@ onMounted(() => {
       <nav class="nav-wrapper">
         <a class="nav-item" href="#home">Home</a>
         <a class="nav-item" href="#values">Values</a>
-        <a class="secondary-nav-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
+        <a class="nav-item" href="#contact">Contact</a>
       </nav>
       <div class="menu-btn">
         <button class="hamburger hamburger--spin" type="button">
@@ -42,7 +42,7 @@ onMounted(() => {
     <div class="menu-items-wrapper closed">
       <a class="menu-item" href="#home">Home</a>
       <a class="menu-item" href="#values">Values</a>
-      <a class="menu-item" href="mailto:gabin.laigle21@gmail.com">Contact Me</a>
+      <a class="menu-item" href="#contact">Contact</a>
     </div>
   </header>
 </template>
@@ -78,12 +78,6 @@ onMounted(() => {
 
 .nav-item {
   @apply hover:font-semibold;
-}
-
-.secondary-nav-item {
-  @apply border-2 rounded-full border-accent-500 py-1 px-4 
-  hover:bg-accent-500 hover:bg-opacity-5 
-  transition duration-200 ease-out;
 }
 
 .menu-btn {

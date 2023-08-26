@@ -2,6 +2,7 @@
 import HeroPage from "./components/HeroPage.vue";
 import Header from "./components/Header.vue";
 import ValuePage from "./components/ValuePage.vue";
+import ContactPage from "./components/ContactPage.vue";
 
 import { onMounted } from "vue";
 
@@ -41,6 +42,7 @@ onMounted(() => {
     <Header />
     <HeroPage />
     <ValuePage />
+    <ContactPage />
   </div>
 </template>
 

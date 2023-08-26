@@ -10,7 +10,10 @@ module.exports = {
     },
     colors: {
       primary: "#F4F3F1",
-      secondary: "#191818",
+      secondary: {
+        500: "#191818",
+        700: "#727272",
+      },
       accent: {
         400: "#E3400D",
         500: "#F25524",
@@ -21,8 +24,7 @@ module.exports = {
       0: "0ms",
       200: "200ms",
       1000: "1000ms",
-      3500: "3500ms",
-      7000: "7000ms",
+      5000: "5000ms",
     },
     extend: {
       animation: {

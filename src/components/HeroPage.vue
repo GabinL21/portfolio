@@ -9,20 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const textArray = [
         'software engineer', 
         'Spring developer',
-        'design lover',
-        'Flutter enthusiast',
+        'CS valedictorian',
+        'JetBrains fan',
         'clean coder',
-        'Figma guru',
-        'ukulele player',
+        'Flutter enthusiast',
+        'design lover',
         'Notion addict',
+        'ukulele player',
+        'Figma guru',
         'productivity nerd',
         'Adobe aficionado',
         'speedcuber',
         'Firebase preacher',
         'beatmaker',
         'Minecraft expert',
-        'book user',
-        'JetBrains fan',
     ];
 
     const initialDelay = 1.5;
@@ -63,9 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="subheader">
                 <div><span class="subheader-1">Relax, </span><span class="subheader-2">you found the right</span></div>
                 <div><span class="bold marker-underline" id="carousel"></span></div>
-            </div>
-            <div class="buttons">
-                <a href="https://www.linkedin.com/in/gabin-laigle/" target="_blank"><div class="primary-btn">Check out my LinkedIn</div></a>
             </div>
             <div class="footer">
                 <a href="#values"><img src="../assets/scroll-down-icon.svg" alt="scroll down icon" class="scroll-down"/></a>
@@ -108,21 +105,6 @@ h1 {
     @apply font-medium
 }
 
-.buttons {
-    @apply mt-24 md:mt-32 flex flex-col space-y-8 md:flex-row md:space-x-8 md:space-y-0 items-center
-}
-
-.primary-btn {
-    @apply
-    text-primary font-medium
-    bg-accent-500 hover:bg-accent-400
-    animate-fade-in animation-delay-3500 opacity-0
-    transition-colors ease-out duration-200
-    px-4 py-2 xl:px-5 xl:py-3
-    text-base md:text-lg xl:text-xl
-    rounded-lg xl:rounded-xl
-}
-
 .marker-underline {
   background-image: linear-gradient(120deg, #F6805B 0%, #F25524 100%);
   background-repeat: no-repeat;
@@ -132,6 +114,6 @@ h1 {
 
 .scroll-down {
     @apply h-8 hover:translate-y-2 transition-opacity duration-1000
-    animate-bounce animation-delay-7000 opacity-0;
+    animate-bounce animation-delay-5000 opacity-0;
 }
 </style>
