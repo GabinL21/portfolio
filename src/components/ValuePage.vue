@@ -56,8 +56,7 @@ onMounted(() => {
 
 .part {
     @apply h-full transition-all duration-300;
-    filter: invert(84%) sepia(90%) saturate(615%) hue-rotate(294deg) brightness(93%) contrast(104%);
-    transform: scale(1); /* Fix for Safari */
+    filter: invert(71%) sepia(42%) saturate(490%) hue-rotate(320deg) brightness(101%) contrast(90%);
 }
 
 .part.pulse-part {
@@ -74,7 +73,6 @@ onMounted(() => {
 
 .part.active-part {
     filter: invert(45%) sepia(28%) saturate(6471%) hue-rotate(347deg) brightness(97%) contrast(96%);
-    transform: scale(1); /* Fix for Safari */
 }
 
 .values-items {
