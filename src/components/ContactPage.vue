@@ -36,11 +36,11 @@
     @apply
     text-primary font-medium
     bg-accent-500 hover:bg-accent-400
-    transition-colors ease-out duration-300
+    transition-all duration-300
     px-4 py-2 xl:px-5 xl:py-3
     text-base md:text-lg xl:text-xl
     rounded-lg xl:rounded-xl
-    animate-bounce
+    animate-bounce hover:animate-none
 }
 
 .content {
