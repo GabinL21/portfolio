@@ -44,7 +44,7 @@
 }
 
 .content {
-    @apply h-5/6 flex flex-col items-center justify-center space-y-16 mt-24;
+    @apply h-5/6 flex flex-col items-center justify-center space-y-16 md:mt-24;
 }
 
 .profile-wrapper {

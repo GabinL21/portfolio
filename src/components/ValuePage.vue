@@ -82,7 +82,7 @@ onMounted(() => {
 }
 
 h1 {
-    @apply text-5xl md:text-6xl xl:text-7xl text-center font-playfair-display mt-16;
+    @apply text-5xl md:text-6xl xl:text-7xl text-center font-playfair-display md:mt-16;
 }
 
 .value:not(.active-value) {
